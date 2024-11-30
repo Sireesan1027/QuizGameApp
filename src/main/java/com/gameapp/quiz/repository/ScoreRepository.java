@@ -4,8 +4,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
 import java.util.List;
-import java.util.Optional;
-
 public interface ScoreRepository extends MongoRepository<Score, String> {
 
     // Find all scores by email (for storing each score)
