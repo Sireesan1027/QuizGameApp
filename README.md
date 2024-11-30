@@ -16,8 +16,8 @@
 
 ### 1. Clone the Repository:
 ```bash
-git clone https://github.com/your-username/game-score-management.git
-cd game-score-management
+git clone https://github.com/Sireesan1027/QuizGameApp.git
+cd quiz-game-app
 ```
 
 ### 2. Configure MongoDB:
