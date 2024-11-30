@@ -8,9 +8,10 @@ import java.util.Optional;
 
 public interface ScoreRepository extends MongoRepository<Score, String> {
 
-    // Find a score by email (to check for existing scores)
-    Optional<Score> findByEmail(String email);
+    // Find all scores by email (for storing each score)
+    List<Score> findByEmail(String email);
 
-    // Query for the top 10 scores, ordered by score descending
-    List<Score> findTop10ByOrderByScoreDesc();
+    // Query for retrieving the highest score for each user (group by email, get the max score)
+    @Query(value = "{}", fields = "{'email': 1, 'username': 1, 'score': 1}")
+    List<Score> findTopScores();  // Get top scores by email (we will process this in service)
 }

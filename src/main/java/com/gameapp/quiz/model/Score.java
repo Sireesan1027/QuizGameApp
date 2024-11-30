@@ -15,7 +15,7 @@ public class Score {
     @Id
     private String gameId;
     private String email;  // Player's email
-    private String username; // Player's username (added field)
+    private String username; // Player's username
     private Integer score;
     private Date timestamp;
 
