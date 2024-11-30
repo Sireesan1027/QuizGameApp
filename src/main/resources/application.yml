@@ -1,0 +1,23 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/gameapp  # MongoDB connection URI for local setup
+
+logging:
+  # Console logging configuration
+  level:
+    com.example.gamingapp: DEBUG  # Set the log level for your application
+    org.springframework.web: INFO  # You can define log levels for third-party libraries
+
+  # Log file configuration
+  file:
+    name: logs/application.log  # Logs will be saved in this file
+
+  # Logging pattern configuration (you can format the logs as you want)
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"  # Console log format
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"    # File log format
+
+  # Optional: specify logging of uncaught exceptions globally
+  exception:
+    enabled: true
