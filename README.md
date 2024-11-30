@@ -26,7 +26,7 @@ In `src/main/resources/application.yml`, set your MongoDB URI:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/gamingapp  # Adjust as needed
+      uri: mongodb://localhost:27017/gameapp  # Adjust as needed
 ```
 
 ### 3. Build and Run:
