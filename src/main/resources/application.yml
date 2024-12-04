@@ -1,7 +1,8 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/gameapp  # MongoDB connection URI for local setup
+      uri: mongodb+srv://siree:%40Sireesan2468@cluster0.uivdf.mongodb.net/gameapp?retryWrites=true&w=majority
+
 
 logging:
   # Console logging configuration
