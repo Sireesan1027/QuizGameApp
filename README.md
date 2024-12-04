@@ -16,8 +16,8 @@
 
 ### 1. Clone the Repository:
 ```bash
-git clone https://github.com/your-username/game-score-management.git
-cd game-score-management
+git clone https://github.com/Sireesan1027/QuizGameApp.git
+cd quiz-game-app
 ```
 
 ### 2. Configure MongoDB:
@@ -26,7 +26,7 @@ In `src/main/resources/application.yml`, set your MongoDB URI:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/gamingapp  # Adjust as needed
+      uri: mongodb://localhost:27017/gameapp  # Adjust as needed
 ```
 
 ### 3. Build and Run:
